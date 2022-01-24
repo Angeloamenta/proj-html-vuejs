@@ -1,0 +1,127 @@
+<template>
+  <section class="excellence">
+    <div class="container">
+      <div class="ecellence-top">
+    <div class="green-text">OUR BUSINES AREA</div>
+    <div class="title"><h1>Excellence in <span class="back-green-twhite">Services</span></h1></div>
+    <div class="subtitle">
+    <div class="sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio et qui consequatur culpa. Aliquam magnam atque natus corporis, eos minima voluptas, tempore architecto deleniti animi fuga. Facere ex laudantium cupiditate.</div>
+    <button class="button-noborder">SEE ALL</button>
+      </div>
+    </div>
+    <div class="excellence-bottom">
+      <div class="card-excellence" v-for="(card, index) in cardExcellence" :key="index">
+        <div class="card-icon">{{card.icon}}</div>
+        <div class="card-title"><h3>{{card.title}}</h3></div>
+        <div class="card-desc">{{card.desc}}</div>
+        <div class="btn"><button class="button-noborder">READ MORE</button></div>
+      </div>
+    </div>
+    </div>
+  </section>
+</template>
+
+<script>
+export default {
+name:'Excellence',
+data() {
+  return {
+    cardExcellence: [
+            {
+                icon: "[]",
+                title: "Audit & Assurance",
+                desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            },
+             {
+                icon: "[]",
+                title: "Financial Advisory",
+                desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            },
+             {
+                icon: "[]",
+                title: "Analytics and M&A",
+                desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            },
+            {
+                icon: "[]",
+                title: "Middle Marketing",
+                desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            },
+            {
+                icon: "[]",
+                title: "Legal Consulting",
+                desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            },
+            {
+                icon: "[]",
+                title: "Regulary Risk",
+                desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            }
+        ]
+  }
+}
+}
+</script>
+
+<style lang="scss">
+@import "../assets/scss/partials/_variables.scss";
+.excellence {
+  background-color: $Woodsmoke;
+  width: 100%;
+  color: $White;
+  .container {
+    padding: 80px 0;
+    .title {
+      h1 {
+        font-size: 2.5em;
+      }
+    }
+    .subtitle {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 25px;
+      align-items: center;
+      .sub {
+        color: $Scarpaflow;
+        font-size: 0.9em;
+        width: 80%;
+      }
+      .button-noborder {
+        font-size: 0.9em;
+        padding: 8px 20px;
+      }
+    }
+
+    .excellence-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 35px;
+
+      .card-excellence {
+        width: calc(90% / 3);
+        height: 290px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        background-color: $Shark;
+        padding: 35px;
+        .card-title {
+          margin: 15px 0;
+        }
+        .card-desc {
+          font-size: 0.9em;
+        }
+        .btn {
+          margin-top: 30px;
+          button {
+            font-size: 0.9em;
+            padding: 8px 20px;
+          }
+        }
+      }
+    }
+  }
+}
+</style>>
+

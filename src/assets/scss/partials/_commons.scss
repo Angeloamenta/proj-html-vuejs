@@ -69,3 +69,18 @@
     border: none;
     font-size: 1em;
  }
+
+ .back-green-twhite {
+    background-color:rgba($color: $Bluelagoon, $alpha: 0.2);
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: $White;
+    font-weight: bold;
+    border: none;
+    font-size: 1em;
+ }
+
+ .green-text {
+    color:$Bluelagoon;
+    font-size: 0.9em;
+ }

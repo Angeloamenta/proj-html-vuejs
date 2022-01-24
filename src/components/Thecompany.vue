@@ -90,7 +90,7 @@ main {
 //  the company
     .the-company {
         width: 100%;
-        min-height: 60vh;
+        height: fit-content;
         .the-company-top {
             background-color: $Graynurse;
             display: flex;
