@@ -13,6 +13,12 @@
         <div class="news-card" v-for="(card, index) in cardNews" :key="index">
           <div class="card-container">
             <img :src="card.img" alt="">
+            <div class="user-text quick-flex">
+              <div><i class="fas fa-solid fa-user"></i> {{card.user}}</div>
+              <div><i class="fas fa-solid fa-clock"></i> {{card.time}}</div>
+              </div>
+            <h2>{{card.text}}</h2>
+            <div class="user-desc">{{card.desc}}</div>
           </div>
         </div>
       </div>
@@ -38,7 +44,7 @@ data() {
                 time: "2 Days Ago",
                 desc:"lorem ipsum bla bla bla bla ",
                 text: "Because market research is part of the busines plan",
-                img: require("../assets/images/news-1.jpg"),
+                img: require("../assets/images/news-2.jpg"),
 
                 
             },
@@ -47,7 +53,7 @@ data() {
                 time: "2 Days Ago",
                 desc:"lorem ipsum bla bla bla bla ",
                 text: "Working from home is now a trend",
-                img: require("../assets/images/news-1.jpg"),
+                img: require("../assets/images/news-3.jpg"),
             }
         ]
     }
@@ -94,7 +100,34 @@ data() {
           .card-container {
             width: 100%;
             height: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+
+            &:hover h2 {
+              bottom: 150px;
+            }
+            &:hover .user-text{
+              display: flex;
+              justify-content: space-between;
+              width: 80%;
+            }
             
+            &:hover .user-desc{
+              display: block;
+            }
+
+             &:hover img{
+              filter: blur(3px);
+            }
+            h2 {
+              color: $White;
+              position: absolute;
+              bottom: 50px;
+              text-align: center;
+              font-size: 1.3em;
+            }
+
             img {
               width: 100%;
               height: 100%;
@@ -102,6 +135,21 @@ data() {
               opacity: 50%;
               object-fit: cover;
               
+            }
+
+            .user-text {
+              position: absolute;
+              top: 50px;
+              color: $White;
+              display: none;
+            
+            }
+
+            .user-desc {
+              position: absolute;
+              bottom: 50px;
+              color: $White;
+              display: none;
             }
           }
         }
