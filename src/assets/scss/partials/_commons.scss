@@ -39,3 +39,33 @@
     padding: 12px 20px;
     border-radius: 5px;
  }
+
+ .button-background {
+    background-color:rgba($color: $Bluelagoon, $alpha: 1);
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-size: 1em;
+ }
+
+ .button-noborder {
+    background-color:transparent;
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid $Bluelagoon;
+    font-size: 1em;
+ }
+
+ .back-green {
+    background-color:rgba($color: $Bluelagoon, $alpha: 0.2);
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: $Bluelagoon;
+    font-weight: bold;
+    border: none;
+    font-size: 1em;
+ }

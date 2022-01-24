@@ -20,6 +20,10 @@
               <div class="text text-center">
               <p>Successful strategies rewuire data analysis, creativity and customer focus, taking advantage of the lastest technologies to offer excelent services.</p>
               </div>
+              <div class="buttons">
+                  <button class="button-background">GET IN TOUCH</button>
+                  <button class="button-noborder">READ MORE</button>
+              </div>
           </div>
       </div>
       </div>
@@ -36,7 +40,7 @@ name: 'Jumbotron',
 @import "../assets/scss/partials/_variables.scss";
 .jumbotron {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background-image: url("../assets/images/hero-image.png");
     background-position: bottom;
     background-size: cover;
@@ -45,7 +49,7 @@ name: 'Jumbotron',
         padding-top: 20px;
         width: 100%;
         height: 100%;
-        background-color: rgba($color: #000000, $alpha: 0.5);
+        background-color: rgba($color: #000000, $alpha: 0.7);
         position: relative;
         color: white;
         .container {
@@ -54,7 +58,7 @@ name: 'Jumbotron',
             height: 100%;
             nav {
                 display: flex;
-                height: 50%;
+                height: 40%;
                 .nav-sx {
                     width: 50%;
                 }
@@ -80,11 +84,20 @@ name: 'Jumbotron',
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                h1 {
+                    font-size: 4.5em;
+                    font-weight: bolder;
+                }
                 .text {
+                    margin: 15px 0;
                     padding: 0 250px;
                     width: 100%;
                 }
-
+                .buttons {
+                    width: 35%;
+                    display: flex;
+                    justify-content: space-around;
+                }
             }
         }
     }
