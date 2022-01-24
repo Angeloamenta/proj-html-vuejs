@@ -5,7 +5,7 @@
       <div class="the-company-top">
           <div class="container">
           <div class="cards" v-for="(card, index) in sezUno" :key="index">
-              <div class="icon">{{card.icon}}</div>
+              <div class="icon"><font-awesome-icon :icon="card.icon"/></div>
               <div class="card-title"><h2>{{card.title}}</h2></div>
               <div class="card-text">{{card.text}}</div> 
           </div>
@@ -42,7 +42,7 @@ data() {
     return {
         sezUno: [
             {
-                icon: "[]",
+                icon: "user-friends",
                 title: "Human Capital",
                 text:"Humanizing business:",
             },

@@ -11,33 +11,33 @@
          <div class="pricing-bottom">
              <div class="pricing-card" :class="(card.active) ? 'selected' : ''" v-for="(card, index) in cardPricing" :key="index" >
                  <div v-show="card.active" class="popular back-green-twhite">Most Popular</div>
-                 <div class="card-icon text-center">{{card.icon}}</div>
+                 <div class="card-icon text-center"><font-awesome-icon :icon="card.icon"/></div>
                  <div class="card-title text-center"><h2>{{card.title}}</h2></div>
                  <div class="card-price text-center"><h3>{{card.price}}</h3><span class="green-text">/mo</span> </div>
                  <div class="check standard quick-flex">
                      <div>Standard Accounting</div>
-                     <div v-if="card.standard">S</div>
-                     <div v-else>N</div>
+                     <div v-if="card.standard"><i class="fas fa-solid fa-check"></i></div>
+                     <div v-else><font-awesome-icon icon="times"/></div>
                  </div>
                  <div class="check acces quick-flex">
                      <div>Platform Access</div>
-                     <div v-if="card.access">S</div>
-                     <div v-else>N</div>
+                     <div v-if="card.access"><i class="fas fa-solid fa-check"></i></div>
+                     <div v-else><font-awesome-icon icon="times"/></div>
                  </div>
                   <div class="check orientation quick-flex">
                      <div>Business Orientation</div>
-                     <div v-if="card.orientation">S</div>
-                     <div v-else>N</div>
+                     <div v-if="card.orientation"><i class="fas fa-solid fa-check"></i></div>
+                     <div v-else><font-awesome-icon icon="times"/></div>
                  </div>
                   <div class="check consulant quick-flex">
                      <div>Dedicated Consulant</div>
-                     <div v-if="card.consulant">S</div>
-                     <div v-else>N</div>
+                     <div v-if="card.consulant"><i class="fas fa-solid fa-check"></i></div>
+                     <div v-else><font-awesome-icon icon="times"/></div>
                  </div>
                  <div class="check assistance quick-flex">
                      <div>Personal Assistance</div>
-                     <div v-if="card.assistance">S</div>
-                     <div v-else>N</div>
+                     <div v-if="card.assistance"><i class="fas fa-solid fa-check"></i></div>
+                     <div v-else><font-awesome-icon icon="times"/></div>
                  </div>
              </div>
          </div>
@@ -46,13 +46,18 @@
 </template>
 
 <script>
+
+
 export default {
 name:'PricingTable',
+components: {
+    
+  },
 data() {
     return {
         cardPricing: [
             {
-                icon: "[]",
+                icon: "rocket",
                 title: "Standard",
                 price:"$490",
                 standard: true,
@@ -63,7 +68,7 @@ data() {
                 
             },
              {
-                icon: "[]",
+                icon: "briefcase",
                 title: "Professional",
                 price:"$890",
                 standard: true,
@@ -76,7 +81,7 @@ data() {
                 
             },
              {
-                icon: "[]",
+                icon: "gem",
                 title: "Ultimate",
                 price:"$1.390",
                 standard: true,
