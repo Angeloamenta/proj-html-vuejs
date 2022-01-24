@@ -2,7 +2,7 @@
   <header>
       <div class="container">
           <div>
-              <i class="fa-solid fa-clock"></i>
+              <i class="fas fa-solid fa-clock"></i>
               <span>Open Hours:{{dayOpen}} -- {{lastDay}} - {{hourFrom}} - {{hourTo}}</span>
           </div>
           <div class="header-dx">
