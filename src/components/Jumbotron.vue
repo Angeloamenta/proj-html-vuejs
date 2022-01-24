@@ -15,6 +15,12 @@
                   </ul>
               </div>
           </nav>
+          <div class="customer">
+              <h1>Lead~ Customer</h1>
+              <div class="text text-center">
+              <p>Successful strategies rewuire data analysis, creativity and customer focus, taking advantage of the lastest technologies to offer excelent services.</p>
+              </div>
+          </div>
       </div>
       </div>
   </div>
@@ -43,10 +49,12 @@ name: 'Jumbotron',
         position: relative;
         color: white;
         .container {
-
+            display: flex;
+            flex-direction: column;
+            height: 100%;
             nav {
                 display: flex;
-                align-items: center;
+                height: 50%;
                 .nav-sx {
                     width: 50%;
                 }
@@ -65,6 +73,17 @@ name: 'Jumbotron',
                      }
                    }
                }
+
+            }
+            .customer {
+                align-self: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .text {
+                    padding: 0 250px;
+                    width: 100%;
+                }
 
             }
         }
