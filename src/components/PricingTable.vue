@@ -9,28 +9,34 @@
          </div>
          </div>
          <div class="pricing-bottom">
-             <div class="pricing-card" v-for="(card, index) in cardPricing" :key="index">
-                 <div class="card-icon">{{card.icon}}</div>
-                 <div class="card-title">{{card.title}}</div>
-                 <div class="card-price">{{card.price}}<span class="green-text">/mo</span> </div>
-                 <div class="standard">
-                     <div>standard</div>
+             <div class="pricing-card" :class="(card.active) ? 'selected' : ''" v-for="(card, index) in cardPricing" :key="index" >
+                 <div v-show="card.active" class="popular back-green-twhite">Most Popular</div>
+                 <div class="card-icon text-center">{{card.icon}}</div>
+                 <div class="card-title text-center"><h2>{{card.title}}</h2></div>
+                 <div class="card-price text-center"><h3>{{card.price}}</h3><span class="green-text">/mo</span> </div>
+                 <div class="check standard quick-flex">
+                     <div>Standard Accounting</div>
                      <div v-if="card.standard">S</div>
                      <div v-else>N</div>
                  </div>
-                 <div class="acces">
+                 <div class="check acces quick-flex">
                      <div>Platform Access</div>
                      <div v-if="card.access">S</div>
                      <div v-else>N</div>
                  </div>
-                  <div class="orientation">
+                  <div class="check orientation quick-flex">
                      <div>Business Orientation</div>
                      <div v-if="card.orientation">S</div>
                      <div v-else>N</div>
                  </div>
-                  <div class="orientation">
-                     <div>Business Orientation</div>
-                     <div v-if="card.orientation">S</div>
+                  <div class="check consulant quick-flex">
+                     <div>Dedicated Consulant</div>
+                     <div v-if="card.consulant">S</div>
+                     <div v-else>N</div>
+                 </div>
+                 <div class="check assistance quick-flex">
+                     <div>Personal Assistance</div>
+                     <div v-if="card.assistance">S</div>
                      <div v-else>N</div>
                  </div>
              </div>
@@ -53,7 +59,8 @@ data() {
                 access: true,
                 orientation: false,
                 consulant: false,
-                assistance: false
+                assistance: false,
+                
             },
              {
                 icon: "[]",
@@ -63,7 +70,9 @@ data() {
                 access: true,
                 orientation: true,
                 consulant: false,
-                assistance: false
+                assistance: false,
+                active:true
+
                 
             },
              {
@@ -86,7 +95,6 @@ data() {
 @import "../assets/scss/partials/_variables.scss";
 .pricing {
     width: 100%;
-    height: 100vh;
     background-color: $Graynurse;
     padding: 70px;
     .container {
@@ -110,11 +118,47 @@ data() {
         .pricing-bottom {
             display: flex;
             justify-content: center;
+            margin-top: 80px;
             .pricing-card {
                 width: calc(100% / 3);
                 height: 500px;
                 background-color: $White;
-                margin-left: 20px;
+                margin-left: 40px;
+                padding: 40px 20px;
+                border-radius: 15px;
+                position: relative;
+
+                &.selected {
+                    scale: 1.07;
+                }
+                .popular {
+                    position: absolute;
+                    left: 0;
+                    top: 15px;
+                    width: 80px;
+                    height: 40px;
+                    padding: 0;
+                    border-radius: 0px 118px 113px 0px / 66px 77px 82px 55px;
+                }
+                .card-price {
+                    margin-top: 10px;
+
+                    h3 {
+                        color: $Bluelagoon;
+                        font-size: 2.5em;
+                        font-weight: 900;
+                        display: inline-block;
+
+                    }
+                }
+
+                .card-title {
+                    color: $Shark;
+                }
+                .check {
+                    margin-top: 20px;
+                    color: $Scarpaflow;
+                }
             }
         }
     }
