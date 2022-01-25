@@ -57,10 +57,13 @@
     background-color:transparent;
     padding: 15px 30px;
     border-radius: 5px;
-    color: white;
+    color: $White;
     font-weight: bold;
     border: 1px solid $Bluelagoon;
     font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
  }
 
  .back-green {
@@ -100,4 +103,14 @@
      border-radius: 3px;
      background-color: rgba($color: $White, $alpha: 0.4);
      border: none;
+ }
+
+ .circle {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     background-color: rgba($color: $Bluelagoon, $alpha: 0.2);
  }

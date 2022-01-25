@@ -21,7 +21,17 @@
              </div>
          </div>
          <div class="touch-dx">
-             
+             <div class="dx-container">
+                 <h2>Example inc.</h2>
+                  <div class="sub">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                  <div class="sub">Optio et qui consequatur culpa. Aliquam magnam atque natus corporis.</div>
+                  <ul class="list-none">
+                      <li> <div class="circle"><i class="fas fa-solid fa-phone"></i></div> <span>+1(305) 1234-5678</span> </li>
+                      <li> <div class="circle"><i class="fas fa-solid fa-envelope"></i></div><span>helloexample.com</span></li>
+                      <li> <div class="circle"><font-awesome-icon icon="location-arrow"/></div><span>Main Avenue, 987</span></li>
+                  </ul>
+                  <button class="button-noborder">VIEW MAP</button>
+             </div>
          </div>
     </div> 
   </section>
@@ -37,7 +47,7 @@ name: 'GetTouch'
 @import "../assets/scss/partials/_variables.scss";
 .touch {
     width: 100%;
-    height: 90vh;
+    padding: 100px 0;
     .container {
         height: 100%;
         display: flex;
@@ -45,7 +55,6 @@ name: 'GetTouch'
 
             width: 60%;
             height: 100%;
-            padding: 100px 0;
             
             .sx-top {
 
@@ -53,7 +62,8 @@ name: 'GetTouch'
     
                     .title {
                         margin: 20px 0;
-                        font-size: 1.5em;
+                        font-size: 1.6em;
+                        font-weight: bold;
                     }
     
                     .subtitle {
@@ -121,9 +131,41 @@ name: 'GetTouch'
         }
 
         .touch-dx {
-            background-color: cyan;
+
             width: 40%;
             height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .dx-container {
+                width: 80%;
+
+                .sub {
+                    margin-top: 15px;
+                    color: $Scarpaflow;
+                }
+
+                ul {
+                    li {
+                        display: flex;
+                        margin-top: 20px;
+                        span {
+                            color: $Bluelagoon;
+                            margin-left: 8px;
+                            font-size: 1.1em;
+                        }
+                    }
+                }
+
+                button {
+                    color: $Bluelagoon;
+                    font-size: 0.8em;
+                    margin-top: 20px;
+                    font-weight: lighter;
+                    padding: 10px 25px;
+                }
+            }
         }
     }
 }
