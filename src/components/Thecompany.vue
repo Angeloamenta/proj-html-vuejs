@@ -4,8 +4,8 @@
       <section class="the-company">
       <div class="the-company-top">
           <div class="container">
-          <div class="cards" v-for="(card, index) in sezUno" :key="index">
-              <div class="icon"><font-awesome-icon :icon="card.icon"/></div>
+          <div class="cards" :class="(card.hover) ? 'select' : ''" @mouseover="card.hover =true" @mouseleave="card.hover =false" v-for="(card, index) in sezUno" :key="index">
+              <div class="icon circle"><font-awesome-icon :icon="card.icon"/></div>
               <div class="card-title"><h2>{{card.title}}</h2></div>
               <div class="card-text">{{card.text}}</div> 
           </div>
@@ -45,16 +45,19 @@ data() {
                 icon: "user-friends",
                 title: "Human Capital",
                 text:"Humanizing business:",
+                hover: false
             },
              {
                 icon: "chart-pie",
                 title: "Core Busines",
                 text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda a laudantium ea, debitis possimus autem ex iure accusantium mollitia iste pariat",
+                hover: false
             },
              {
                 icon: "tachometer-alt",
                 title: "Performance",
                 text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda a laudantium ea, debitis possimus autem ex iure accusantium mollitia iste pariat",
+                hover: false
             }
         ],
         company: [
@@ -99,15 +102,21 @@ main {
             .container {
                 display: flex;
                 justify-content: space-between;
+                position: relative;
                 .cards {
                     width:calc(90% / 3) ;
-                    height: 300px;
                     border-radius: 10px;
-                    padding: 50px;
+                    padding: 20px;
                     background-color: $White;
                 }
+
+                .select {
+                    position: relative;
+                    bottom: 10px;
+                }
                 .icon {
-                    
+                    font-size: 2em;
+                    padding: 30px;
                 }
                 .card-title {
                     margin: 20px 0;
