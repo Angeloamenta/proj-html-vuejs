@@ -85,7 +85,7 @@ name: 'GetTouch'
                     height: 40px;
                     margin-right: 10px;
                     margin-top: 10px;
-                    background-color: $Graynurse;
+                    background-color: rgba($color: $Edward, $alpha: 0.2);
                     display: flex;
                     align-items: center;
 
@@ -115,11 +115,12 @@ name: 'GetTouch'
                     margin-top: 20px;
                         width: 100%;
                         height: 200px;
-                        background-color: $Graynurse;
+                        background-color: rgba($color: $Edward, $alpha: 0.2);
                         textarea {
                             width: 100%;
                             height: 100%;
                             outline: none;
+                            border: none;
                             background-color: transparent;
                         }
                     }
