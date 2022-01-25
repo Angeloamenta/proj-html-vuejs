@@ -48,6 +48,9 @@
     font-weight: bold;
     border: none;
     font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
  }
 
  .button-noborder {
@@ -89,4 +92,12 @@
      display: flex;
      align-items: center;
      justify-content: space-between;
+ }
+
+ .input-text {
+     width: 80%;
+     height: 35px;
+     border-radius: 3px;
+     background-color: rgba($color: $White, $alpha: 0.4);
+     border: none;
  }

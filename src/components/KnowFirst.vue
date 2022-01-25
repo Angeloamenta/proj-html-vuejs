@@ -1,0 +1,79 @@
+<template>
+  <section class="know">
+      <div class="container">
+          <div class="know-sx">
+              <div class="know-text">
+             <div class="green-text">NEWSLETTER</div>
+            <div class="title"><h1><span class="back-green-twhite">Know</span>First</h1></div>
+            <div class="subtitle">
+            <div class="sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio et qui consequatur culpa. Aliquam magnam atque natus corporis.</div>
+         </div>
+         </div>
+          </div>
+          <div class="know-dx">
+              <div class="know-input">
+                  <div class="name"><input class="input-text" type="text" placeholder="Name"></div>
+                  <div class="email"><input class="input-text" type="text" placeholder="Email"></div>
+                  <button class="button-background">SUBSCRIBE</button>
+              </div>
+          </div>
+      </div>
+  </section>
+</template>
+
+<script>
+export default {
+name: 'KnowFirst'
+}
+</script>
+
+<style lang="scss">
+@import "../assets/scss/partials/_variables.scss";
+.know {
+    width: 100%;
+    padding: 100px 0;
+    background-image: url("../assets/images/bg-1.jpg");
+    background-position: center;
+    background-size: cover;
+    .container {
+        display: flex;
+        height: 100%;
+        .know-sx {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            .know-text{
+
+                .title {
+                    margin: 20px 0;
+                    font-size: 1.5em;
+                }
+
+                .subtitle {
+
+                    .sub {
+                        color: $White;
+                        font-size: 0.8em;
+                    }
+                }
+            }
+        }
+        
+        .know-dx {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            
+            .know-input {
+                width: 100%;
+                .email {
+                    margin: 20px 0;
+                }
+                
+            }
+        }
+    }
+}
+</style>
