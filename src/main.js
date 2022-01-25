@@ -22,7 +22,7 @@ import { faChartBar } from '@fortawesome/free-solid-svg-icons'
 import { faInbox } from '@fortawesome/free-solid-svg-icons'
 import { faProjectDiagram } from '@fortawesome/free-solid-svg-icons'
 import { faGlobe } from '@fortawesome/free-solid-svg-icons'
-// import {  } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 // import {  } from '@fortawesome/free-solid-svg-icons'
 
 
@@ -46,7 +46,7 @@ library.add(faChartBar)
 library.add(faInbox)
 library.add(faProjectDiagram)
 library.add(faGlobe)
-// library.add()
+library.add(faArrowRight)
 // library.add()
 // library.add()
 // library.add(faTwitter)

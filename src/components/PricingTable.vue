@@ -9,7 +9,8 @@
          </div>
          </div>
          <div class="pricing-bottom">
-             <div class="pricing-card" :class="(card.active) ? 'selected' : ''" v-for="(card, index) in cardPricing" :key="index" >
+             <div class="pricing-card" :class="(card.active) ? 'selected' : ''" @mouseover="card.hover =true" @mouseleave="card.hover =false" v-for="(card, index) in cardPricing" :key="index" >
+                 <font-awesome-icon class="arrow" :class="(card.hover) ? 'visible' : ''" icon="arrow-right"/>
                  <div v-show="card.active" class="popular back-green-twhite">Most Popular</div>
                  <div class="card-icon text-center"><font-awesome-icon :icon="card.icon"/></div>
                  <div class="card-title text-center"><h2>{{card.title}}</h2></div>
@@ -65,6 +66,7 @@ data() {
                 orientation: false,
                 consulant: false,
                 assistance: false,
+                hover: false
                 
             },
              {
@@ -76,7 +78,8 @@ data() {
                 orientation: true,
                 consulant: false,
                 assistance: false,
-                active:true
+                active:true,
+                hover: false
 
                 
             },
@@ -88,7 +91,8 @@ data() {
                 access: true,
                 orientation: true,
                 consulant: true,
-                assistance: true
+                assistance: true,
+                hover: false
             }
         ]
     }
@@ -133,6 +137,19 @@ data() {
                 border-radius: 15px;
                 position: relative;
 
+                .arrow {
+                    color: $Bluelagoon;
+                    position: absolute;
+                    right: 5px;
+                    top: 15px;
+                    font-size: 1.6em;
+                    display: none;
+                }
+
+                .visible {
+                    display: block;
+                }
+
                 &.selected {
                     scale: 1.07;
                 }
@@ -146,6 +163,13 @@ data() {
                     border-radius: 0px 119px 119px 0px / 12px 75px 75px 55px;
                     background-color: $Bluelagoon;
                 }
+
+                .card-icon {
+                        font-size: 2em;
+                        color: $Bluelagoon;
+                        margin-bottom: 10px;
+                    }
+
                 .card-price {
                     margin-top: 10px;
 
@@ -156,6 +180,8 @@ data() {
                         display: inline-block;
 
                     }
+
+        
                 }
 
                 .card-title {
@@ -166,6 +192,8 @@ data() {
                     color: $Scarpaflow;
                 }
             }
+
+            
         }
     }
 }
