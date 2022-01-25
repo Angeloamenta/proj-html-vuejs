@@ -48,6 +48,7 @@ name: 'KnowFirst'
                 .title {
                     margin: 20px 0;
                     font-size: 1.5em;
+                    color: $White;
                 }
 
                 .subtitle {
