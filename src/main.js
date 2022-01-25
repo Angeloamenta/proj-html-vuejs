@@ -23,6 +23,9 @@ import { faInbox } from '@fortawesome/free-solid-svg-icons'
 import { faProjectDiagram } from '@fortawesome/free-solid-svg-icons'
 import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faLocationArrow } from '@fortawesome/free-solid-svg-icons'
+// import {  } from '@fortawesome/free-solid-svg-icons'
+// import {  } from '@fortawesome/free-solid-svg-icons'
 // import {  } from '@fortawesome/free-solid-svg-icons'
 
 
@@ -47,7 +50,7 @@ library.add(faInbox)
 library.add(faProjectDiagram)
 library.add(faGlobe)
 library.add(faArrowRight)
-// library.add()
+library.add(faLocationArrow)
 // library.add()
 // library.add(faTwitter)
 // library.add(faLinkedinIn)

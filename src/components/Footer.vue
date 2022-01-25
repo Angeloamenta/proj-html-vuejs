@@ -105,6 +105,12 @@ footer {
                         font-size: 0.9em;
                         padding: 15px 15px;
                         margin-top: 15px;
+
+                        &:hover {
+
+                            background-color: $Bluelagoon;
+
+                        }
                     }
                 }
             }

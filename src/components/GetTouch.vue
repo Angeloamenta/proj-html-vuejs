@@ -127,6 +127,8 @@ name: 'GetTouch'
                 
                 button {
                     margin-top: 20px;
+
+                    
                 }
             }
         }
@@ -165,6 +167,11 @@ name: 'GetTouch'
                     margin-top: 20px;
                     font-weight: lighter;
                     padding: 10px 25px;
+
+                    &:hover {
+                        background-color: $Bluelagoon;
+                        color: $White;
+                    }
                 }
             }
         }
