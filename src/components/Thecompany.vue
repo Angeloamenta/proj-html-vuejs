@@ -21,7 +21,7 @@
                   <div class="the-company-card">
                       <div class="card-company" v-for="(companyCard, index) in company" :key="index" >
                           <div class="card-company-title">
-                              <span>{{companyCard.icon}}</span> <h3>{{companyCard.title}}</h3>
+                              <span><font-awesome-icon :icon="companyCard.icon"/></span><h3>{{companyCard.title}}</h3>
                           </div>
                           <div class="card-company-des">
                               {{companyCard.desc}}
@@ -62,24 +62,24 @@ data() {
         ],
         company: [
             {
-                icon: "[]",
+                icon: "medal",
                 title: "Tradition",
                 desc:"Humanizing business:",
             },
              {
-                icon: "[]",
+                icon: "lock",
                 title: "Security",
-                desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda a laudantium ea, debitis possimus autem ex iure accusantium mollitia iste pariat",
+                desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
             },
              {
-                icon: "[]",
+                icon: "edit",
                 title: "Certificate",
-                desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda a laudantium ea, debitis possimus autem ex iure accusantium mollitia iste pariat",
+                desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
             },
             {
-                icon: "[]",
+                icon: "graduation-cap",
                 title: "Expertise",
-                desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda a laudantium ea, debitis possimus autem ex iure accusantium mollitia iste pariat",
+                desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
             }
         ]
     }
@@ -164,6 +164,13 @@ main {
                                 .card-company-title {
                                     display: flex;
                                     margin-bottom: 20px;
+                                    h3 {
+                                        font-size: 1.2em;
+                                        margin-left: 8px;
+                                    }
+                                    span {
+                                        font-size: 1.2em;
+                                    }
                                 }
                             }
 

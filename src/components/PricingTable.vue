@@ -142,8 +142,9 @@ data() {
                     top: 15px;
                     width: 80px;
                     height: 40px;
-                    padding: 0;
-                    border-radius: 0px 118px 113px 0px / 66px 77px 82px 55px;
+                    padding: 0 5px;
+                    border-radius: 0px 119px 119px 0px / 12px 75px 75px 55px;
+                    background-color: $Bluelagoon;
                 }
                 .card-price {
                     margin-top: 10px;

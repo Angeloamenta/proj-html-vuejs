@@ -13,6 +13,19 @@ import { faUserFriends } from '@fortawesome/free-solid-svg-icons'
 // import { faFacebookSquare} from '@fortawesome/fontawesome-free-brands';<i class="fas fa-tachometer-alt"></i>chart-pie
 import { faTachometerAlt } from '@fortawesome/free-solid-svg-icons'
 import { faChartPie } from '@fortawesome/free-solid-svg-icons'
+import { faMedal } from '@fortawesome/free-solid-svg-icons'
+import { faLock } from '@fortawesome/free-solid-svg-icons'
+import { faEdit } from '@fortawesome/free-solid-svg-icons'
+import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
+import { faPlane } from '@fortawesome/free-solid-svg-icons'
+import { faChartBar } from '@fortawesome/free-solid-svg-icons'
+import { faInbox } from '@fortawesome/free-solid-svg-icons'
+import { faProjectDiagram } from '@fortawesome/free-solid-svg-icons'
+import { faGlobe } from '@fortawesome/free-solid-svg-icons'
+// import {  } from '@fortawesome/free-solid-svg-icons'
+// import {  } from '@fortawesome/free-solid-svg-icons'
+
+
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
@@ -24,7 +37,18 @@ library.add(faBriefcase)
 library.add(faUserFriends)
 library.add(faTachometerAlt)
 library.add(faChartPie)
-// library.add(faFacebookF)
+library.add(faMedal)
+library.add(faLock)
+library.add(faEdit)
+library.add(faGraduationCap)
+library.add(faPlane)
+library.add(faChartBar)
+library.add(faInbox)
+library.add(faProjectDiagram)
+library.add(faGlobe)
+// library.add()
+// library.add()
+// library.add()
 // library.add(faTwitter)
 // library.add(faLinkedinIn)
 // library.add(faFacebookSquare)

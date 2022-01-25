@@ -10,11 +10,14 @@
       </div>
     </div>
     <div class="excellence-bottom">
-      <div class="card-excellence" v-for="(card, index) in cardExcellence" :key="index">
-        <div class="card-icon">{{card.icon}}</div>
+      <div class="card-excellence" :class="(card.hover) ? 'selected' : ''" @mouseover="card.hover =true" @mouseleave="card.hover =false" v-for="(card, index) in cardExcellence" :key="index">
+        <div class="card-icon"><font-awesome-icon :icon="card.icon"/></div>
         <div class="card-title"><h3>{{card.title}}</h3></div>
         <div class="card-desc">{{card.desc}}</div>
+        <div>
         <div class="btn"><button class="button-noborder">READ MORE</button></div>
+
+        </div>
       </div>
     </div>
     </div>
@@ -28,34 +31,40 @@ data() {
   return {
     cardExcellence: [
             {
-                icon: "[]",
+                icon: "project-diagram",
                 title: "Audit & Assurance",
                 desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                hover: false
             },
              {
-                icon: "[]",
+                icon: "briefcase",
                 title: "Financial Advisory",
                 desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                hover: false
             },
              {
-                icon: "[]",
+                icon: "chart-bar",
                 title: "Analytics and M&A",
                 desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                hover: false
             },
             {
-                icon: "[]",
+                icon: "plane",
                 title: "Middle Marketing",
                 desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                hover: false
             },
             {
-                icon: "[]",
+                icon: "globe",
                 title: "Legal Consulting",
                 desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                hover: false
             },
             {
-                icon: "[]",
+                icon: "inbox",
                 title: "Regulary Risk",
                 desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                hover: false
             }
         ]
   }
@@ -89,6 +98,9 @@ data() {
       .button-noborder {
         font-size: 0.9em;
         padding: 8px 20px;
+       &:hover  {
+            background-color: $Bluelagoon;
+          }
       }
     }
 
@@ -112,12 +124,30 @@ data() {
         .card-desc {
           font-size: 0.9em;
         }
+
+        .card-icon {
+          font-size: 1.7em;
+          color: $Bluelagoon;
+        }
+
         .btn {
           margin-top: 30px;
           button {
             font-size: 0.9em;
             padding: 8px 20px;
           }
+
+          &:hover button {
+            background-color: $Bluelagoon;
+          }
+        }
+      }
+
+      .selected {
+        position: relative;
+        bottom: 10px;
+        .card-icon {
+          color: $White;
         }
       }
     }
