@@ -4,7 +4,7 @@
        <div class="container">
           <div class="ft-col">
               <div class="slot">
-                 <h2><span class="next">NEX</span>GEN</h2>
+                 <h2 class="logo-next"><span class="next">NEX</span>GEN</h2>
                   <div class="sub">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
                   <ul class="list-none">
                       <li> <div class=""><i class="fas fa-solid fa-phone"></i></div> <span>+1(305) 1234-5678</span> </li>
@@ -88,7 +88,7 @@ footer {
                     
                     .sub {
                         margin: 10px 0;
-                        font-size: 0.9em;
+                        font-size: 1em;
                         
                     }
                     ul {
@@ -119,6 +119,10 @@ footer {
                 background-color: rgba($color: $Shark, $alpha: 0.3);
                 border-radius: 5px;
                 padding: 30px;
+
+                h2 {
+                    color: $White;
+                }
 
                 ul {
                     .footer-list {

@@ -34,7 +34,14 @@
     padding: 6px 2px 6px 20px;
     color: $Bluelagoon;
   }
+
+  .logo-next {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    letter-spacing: .3rem;
+  }
  
+
  .active {
     background-color:rgba($color: $Bluelagoon, $alpha: 1);;
     padding: 12px 20px;
@@ -90,6 +97,8 @@
  .green-text {
     color:$Bluelagoon;
     font-size: 0.9em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
  }
 
  .quick-flex {

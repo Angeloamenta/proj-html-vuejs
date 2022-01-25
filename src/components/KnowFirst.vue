@@ -43,19 +43,21 @@ name: 'KnowFirst'
             height: 100%;
             display: flex;
             align-items: center;
+            padding-right: 30px;
             .know-text{
 
                 .title {
                     margin: 20px 0;
                     font-size: 1.5em;
                     color: $White;
+                    font-weight: bold;
                 }
 
                 .subtitle {
 
                     .sub {
                         color: $White;
-                        font-size: 0.8em;
+                        font-size: 1.1em;
                     }
                 }
             }
@@ -69,10 +71,19 @@ name: 'KnowFirst'
             
             .know-input {
                 width: 100%;
+                .input-text {
+                    padding-left: 10px;
+                }
                 .email {
                     margin: 20px 0;
                 }
                 
+                button {
+
+                    &:hover {
+                        background-color: rgba($color: $Bluelagoon, $alpha: 0.5);
+                    }
+                }
             }
         }
     }

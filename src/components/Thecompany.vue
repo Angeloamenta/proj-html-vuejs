@@ -49,7 +49,7 @@ data() {
             },
              {
                 icon: "chart-pie",
-                title: "Core Busines",
+                title: "Core Business",
                 text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda a laudantium ea, debitis possimus autem ex iure accusantium mollitia iste pariat",
                 hover: false
             },
@@ -170,6 +170,7 @@ main {
                                     }
                                     span {
                                         font-size: 1.2em;
+                                        color: $Bluelagoon;
                                     }
                                 }
                             }

@@ -63,7 +63,9 @@ name: 'GetTouch'
                     .title {
                         margin: 20px 0;
                         font-size: 1.6em;
-                        font-weight: bold;
+                        h1 {
+                            font-weight: 900;
+                        }
                     }
     
                     .subtitle {
@@ -127,8 +129,9 @@ name: 'GetTouch'
                 
                 button {
                     margin-top: 20px;
-
-                    
+                    &:hover {
+                        background-color: rgba($color: $Bluelagoon, $alpha: 0.5);
+                   }
                 }
             }
         }

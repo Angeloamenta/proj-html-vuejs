@@ -3,7 +3,7 @@
       <div class="inner-container">
       <div class="container">
           <nav>
-              <div class="nav-sx"><h2><span class="next">NEX</span>GEN</h2></div>
+              <div class="nav-sx"><h2 class="logo-next"><span class="next">NEX</span>GEN</h2></div>
               <div class="nav-dx">
                   <ul class="list-none">
                       <li><a href="">HOME</a></li>
@@ -16,13 +16,13 @@
               </div>
           </nav>
           <div class="customer">
-              <h1>Lead~ Customer</h1>
+              <h1>Lead&#126; <span class="back-green-twhite">Customer</span></h1>
               <div class="text text-center">
               <p>Successful strategies rewuire data analysis, creativity and customer focus, taking advantage of the lastest technologies to offer excelent services.</p>
               </div>
               <div class="buttons">
-                  <button class="button-background">GET IN TOUCH</button>
-                  <button class="button-noborder">READ MORE</button>
+                  <button class="button-background btn-sx">GET IN TOUCH</button>
+                  <button class="button-noborder btn-dx">READ MORE</button>
               </div>
           </div>
       </div>
@@ -40,7 +40,6 @@ name: 'Jumbotron',
 @import "../assets/scss/partials/_variables.scss";
 .jumbotron {
     width: 100%;
-    height: 90vh;
     background-image: url("../assets/images/hero-image.png");
     background-position: bottom;
     background-size: cover;
@@ -58,22 +57,25 @@ name: 'Jumbotron',
             height: 100%;
             nav {
                 display: flex;
+                align-items: center;
                 height: 40%;
                 .nav-sx {
-                    width: 50%;
+                    width: 20%;
                 }
 
                .nav-dx {
-                   width: 50%;
+                   width: 80%;
             
                    ul {
                        display: flex;
-                       justify-content: space-between;
                        align-items: center;
+                       justify-content: center;
                      li {
+                         margin-left: 30px;
                          a {
                              color:white;
                          }
+                        
                      }
                    }
                }
@@ -84,9 +86,10 @@ name: 'Jumbotron',
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                padding: 150px 0;
                 h1 {
                     font-size: 4.5em;
-                    font-weight: bolder;
+                    font-weight: 900;
                 }
                 .text {
                     margin: 15px 0;
@@ -94,9 +97,23 @@ name: 'Jumbotron',
                     width: 100%;
                 }
                 .buttons {
-                    width: 35%;
                     display: flex;
-                    justify-content: space-around;
+                    justify-content: center;
+
+                    button {
+                        margin-left: 15px;
+                        
+                    }
+                    .btn-sx {
+                            &:hover {
+                                background-color: rgba($color: $Bluelagoon, $alpha: 0.5);
+                            }
+                        }
+                    .btn-dx {
+                            &:hover {
+                                background-color: $Bluelagoon;
+                            }
+                        }
                 }
             }
         }
