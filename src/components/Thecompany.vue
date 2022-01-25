@@ -47,12 +47,12 @@ data() {
                 text:"Humanizing business:",
             },
              {
-                icon: "[]",
+                icon: "chart-pie",
                 title: "Core Busines",
                 text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda a laudantium ea, debitis possimus autem ex iure accusantium mollitia iste pariat",
             },
              {
-                icon: "[]",
+                icon: "tachometer-alt",
                 title: "Performance",
                 text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda a laudantium ea, debitis possimus autem ex iure accusantium mollitia iste pariat",
             }

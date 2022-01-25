@@ -2,21 +2,21 @@
   <header>
       <div class="container">
           <div>
-              <i class="fas fa-solid fa-clock"></i>
+              <i class="fas fa-solid fa-clock mr"></i>
               <span>Open Hours:{{dayOpen}} -- {{lastDay}} - {{hourFrom}} - {{hourTo}}</span>
           </div>
           <div class="header-dx">
               <div>
-                  [] {{telNumber}}
+                  <i class="fas fa-solid fa-phone mr"></i> {{telNumber}}
               </div>
               <div>
-                  [] {{email}}
+                  <i class="fas fa-solid fa-envelope mr"></i> {{email}}
               </div>
               <div class="social">
                   <ul class="list-none">
-                      <li>[]</li>
-                      <li>[]</li>
-                      <li>[]</li>
+                      <li><i class="fab fa-facebook-f"></i></li>
+                      <li><i class="fab fa-twitter"></i></li>
+                      <li><i class="fab fa-linkedin-in"></i></li>
                   </ul>
               </div>
           </div>
