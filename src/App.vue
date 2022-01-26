@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <Header/>
+    <Header
+    :arraySocial="social"
+    />
     <Jumbotron
     :arrayNav="navbar"
     />
@@ -30,6 +32,22 @@ export default {
   },
    data() {
     return {
+        // social link
+          social: [
+            {
+                link:"#",
+                img:"fab fa-facebook-f",
+            },
+            {
+                link:"#",
+                img:"fab fa-twitter",
+            },
+            {
+                link:"#",
+                img:"fab fa-linkedin-in",
+            },
+        ],
+
       // dati navbar
      navbar: [
             {

@@ -14,9 +14,7 @@
               </div>
               <div class="social">
                   <ul class="list-none">
-                      <li><i class="fab fa-facebook-f"></i></li>
-                      <li><i class="fab fa-twitter"></i></li>
-                      <li><i class="fab fa-linkedin-in"></i></li>
+                      <li v-for="(net, index) in arraySocial" :key="index"><a :href="net.link"><i :class="net.img"></i></a></li>
                   </ul>
               </div>
           </div>
@@ -27,6 +25,9 @@
 <script>
 export default {
 name: 'Header',
+props: {
+    arraySocial:Array,
+},
 data() {
     return {
         dayOpen: "Mon",
@@ -35,6 +36,7 @@ data() {
         hourTo: "18:00",
         telNumber: "+1(305) 1234-5678",
         email: "helloexample.com", 
+
     }
 }
 }
@@ -64,6 +66,14 @@ header {
                 ul {
                     display: flex;
                     justify-content: space-around;
+                    li{
+                        a {
+                            color: $White;
+                            &:hover{
+                                color: $Bluelagoon;
+                            }
+                        }
+                    }
                 }
             }
         }
