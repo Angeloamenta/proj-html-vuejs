@@ -10,7 +10,7 @@
       </div>
     </div>
     <div class="excellence-bottom">
-      <div class="card-excellence" :class="(card.hover) ? 'selected' : ''" @mouseover="card.hover =true" @mouseleave="card.hover =false" v-for="(card, index) in cardExcellence" :key="index">
+      <div class="card-excellence" :class="(card.hover) ? 'selected' : ''" @mouseover="card.hover =true" @mouseleave="card.hover =false" v-for="(card, index) in arrayExcellence" :key="index">
         <div class="card-icon"><font-awesome-icon :icon="card.icon"/></div>
         <div class="card-title"><h3>{{card.title}}</h3></div>
         <div class="card-desc">{{card.desc}}</div>
@@ -27,46 +27,12 @@
 <script>
 export default {
 name:'Excellence',
+props: {
+  arrayExcellence: Array,
+},
 data() {
   return {
-    cardExcellence: [
-            {
-                icon: "project-diagram",
-                title: "Audit & Assurance",
-                desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-                hover: false
-            },
-             {
-                icon: "briefcase",
-                title: "Financial Advisory",
-                desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-                hover: false
-            },
-             {
-                icon: "chart-bar",
-                title: "Analytics and M&A",
-                desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-                hover: false
-            },
-            {
-                icon: "plane",
-                title: "Middle Marketing",
-                desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-                hover: false
-            },
-            {
-                icon: "globe",
-                title: "Legal Consulting",
-                desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-                hover: false
-            },
-            {
-                icon: "inbox",
-                title: "Regulary Risk",
-                desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-                hover: false
-            }
-        ]
+    
   }
 }
 }

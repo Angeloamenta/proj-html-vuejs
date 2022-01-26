@@ -9,7 +9,7 @@
          </div>
          </div>
          <div class="pricing-bottom">
-             <div class="pricing-card" :class="(card.active) ? 'selected' : ''" @mouseover="card.hover =true" @mouseleave="card.hover =false" v-for="(card, index) in cardPricing" :key="index" >
+             <div class="pricing-card" :class="(card.active) ? 'selected' : ''" @mouseover="card.hover =true" @mouseleave="card.hover =false" v-for="(card, index) in arrayPricing" :key="index" >
                  <font-awesome-icon class="arrow" :class="(card.hover) ? 'visible' : ''" icon="arrow-right"/>
                  <div v-show="card.active" class="popular back-green-twhite">Most Popular</div>
                  <div class="card-icon text-center"><font-awesome-icon :icon="card.icon"/></div>
@@ -54,47 +54,12 @@ name:'PricingTable',
 components: {
     
   },
+  props: {
+      arrayPricing:Array,
+  },
 data() {
     return {
-        cardPricing: [
-            {
-                icon: "rocket",
-                title: "Standard",
-                price:"$490",
-                standard: true,
-                access: true,
-                orientation: false,
-                consulant: false,
-                assistance: false,
-                hover: false
-                
-            },
-             {
-                icon: "briefcase",
-                title: "Professional",
-                price:"$890",
-                standard: true,
-                access: true,
-                orientation: true,
-                consulant: false,
-                assistance: false,
-                active:true,
-                hover: false
-
-                
-            },
-             {
-                icon: "gem",
-                title: "Ultimate",
-                price:"$1.390",
-                standard: true,
-                access: true,
-                orientation: true,
-                consulant: true,
-                assistance: true,
-                hover: false
-            }
-        ]
+    
     }
 }
 }

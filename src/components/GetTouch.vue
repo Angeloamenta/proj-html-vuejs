@@ -26,7 +26,7 @@
                   <div class="sub">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
                   <div class="sub">Optio et qui consequatur culpa. Aliquam magnam atque natus corporis.</div>
                   <ul class="list-none">
-                      <li v-for="(dato, index) in dati" :key=index> 
+                      <li v-for="(dato, index) in arrayDati" :key=index> 
                           <div class="circle"><font-awesome-icon :icon="dato.img"/></div> <span>{{dato.info}}</span> 
                       </li>
                       
@@ -41,24 +41,13 @@
 <script>
 export default {
 name: 'GetTouch',
+props:{
+    arrayDati: Array,
+},
  data() {
     return {
-        dati: [
-            {
-                info: "+1(305) 1234-5678",
-                img:"phone",
-            },
-            {
-                info: "helloexample.com",
-                img: "envelope",
-            },
-            {
-                info: "Main Avenue, 987",
-                img: "map-marked-alt",
-            }
-        ]
-        
-
+       
+    
     }
 }
 }

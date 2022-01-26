@@ -10,7 +10,7 @@
         </div>
       </div>
       <div class="news-bottom">
-        <div class="news-card" v-for="(card, index) in cardNews" :key="index">
+        <div class="news-card" v-for="(card, index) in arrayNews" :key="index">
           <div class="card-container">
             <img :src="card.img" alt="">
             <div class="user-text quick-flex">
@@ -32,33 +32,12 @@
 <script>
 export default {
 name:'LatestNews',
+props: {
+  arrayNews: Array,
+},
 data() {
     return {
-        cardNews: [
-            {
-                user: "Andrea Miller",
-                time: "2 Days Ago",
-                desc:"lorem ipsum bla bla bla bla ",
-                text: "Increasing creativity is possible for everyone",
-                img: require("../assets/images/news-1.jpg"),
-            },
-             {
-                 user: "Andrea Miller",
-                time: "2 Days Ago",
-                desc:"lorem ipsum bla bla bla bla ",
-                text: "Because market research is part of the busines plan",
-                img: require("../assets/images/news-2.jpg"),
-
-                
-            },
-             {
-                user: "Andrea Miller",
-                time: "2 Days Ago",
-                desc:"lorem ipsum bla bla bla bla ",
-                text: "Working from home is now a trend",
-                img: require("../assets/images/news-3.jpg"),
-            }
-        ]
+        
     }
 }
 }

@@ -4,8 +4,13 @@
     <Jumbotron
     :arrayNav="navbar"
     />
-    <Main/>
-    <Footer/>
+    <Main
+    :arrayDati="dati"
+    />
+    <Footer
+    :arrayDatif="dati"
+    :arrayLinkFooter="footerLink"
+    />
   </div>
 </template>
 
@@ -25,6 +30,7 @@ export default {
   },
    data() {
     return {
+      // dati navbar
      navbar: [
             {
                 name: "HOME",
@@ -56,7 +62,56 @@ export default {
                 id: "#touch",
                 activated: false
             }
-        ]
+        ],
+
+        // dati generici
+
+         dati: [
+            {
+                info: "+1(305) 1234-5678",
+                img:"phone",
+            },
+            {
+                info: "helloexample.com",
+                img: "envelope",
+            },
+            {
+                info: "Main Avenue, 987",
+                img: "map-marked-alt",
+            }
+        ],
+
+        // footer link
+
+        footerLink: [
+             {
+                  title: "About",
+                  info1: "The Company",
+                  info2: "Institutional",
+                  info3: "Social & Events",
+                  info4: "Innovation",
+                  info5: "Environment",
+                  info6: "Technology",
+            },
+            {
+                  title: "Services",
+                  info1: "Audit & Assurance",
+                  info2: "Financial Advisory",
+                  info3: "Analytics M&A",
+                  info4: "Middle Marketing",
+                  info5: "Legal Consulting",
+                  info6: "Regulatory Risk",
+            },
+              {
+                  title: "Support",
+                  info1: "Responsibility",
+                  info2: "Terms of Use",
+                  info3: "About Cookies",
+                  info4: "Privacy Policy",
+                  info5: "Accessibility",
+                  info6: "Information",
+            }
+        ] 
     };
   },
 };
