@@ -26,6 +26,7 @@
       </div>
      <div class="menu-hide" v-show="show" @click="menuShow =!menuShow"><font-awesome-icon icon="bars"/></div>
       <div v-show="menuShow" class="nav2" @mouseleave="leaveNav()">
+          <div class="logo-bar"><h2 class="logo-next"><span class="next">NEX</span>GEN</h2></div>
           <ul class="list-none font-mon font-bolder">
                       <li :class="(nav.activated) ? 'active' : ''" @mouseover="nav.activated = true" @mouseleave="nav.activated =false" v-for="(nav, index) in arrayNav" :key="index">
                           <a :href="nav.id">{{nav.name}}</a>
@@ -168,7 +169,7 @@ stopNav() {
         color: $Bluelagoon;
     }
     .nav2 {
-        height: 50%;
+        height: 60%;
         width: 10%;
         margin: 0 auto;
         background-color: rgba($color: $Shark, $alpha: .7);
@@ -176,8 +177,13 @@ stopNav() {
         top: 0vh;
         z-index: 99;
         padding-top: 50px;
-        padding-bottom: 10px;
+        padding-bottom: 50px;
         border-radius: 0 10px 10px 0;
+
+        .logo-bar {
+            margin: 10px 0;
+            margin-left: 10px;
+        }
         ul{
             display: flex;
             flex-direction: column;
@@ -189,6 +195,7 @@ stopNav() {
                 height: 40px;
                 display: flex;
                 align-items: center;
+                padding-left: 5px;
                 a {
                     color: $White;
                     
