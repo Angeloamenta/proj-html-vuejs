@@ -5,7 +5,7 @@
           <nav>
               <div class="nav-sx"><h2 class="logo-next"><span class="next">NEX</span>GEN</h2></div>
               <div class="nav-dx">
-                  <ul class="list-none">
+                  <ul class="list-none font-mon font-bolder">
                       <li><a href="">HOME</a></li>
                       <li><a href="">ABOUT</a></li>
                       <li><a href="">SERVICES</a></li>
@@ -18,7 +18,7 @@
           <div class="customer">
               <h1>Lead&#126; <span class="back-green-twhite">Customer</span></h1>
               <div class="text text-center">
-              <p>Successful strategies rewuire data analysis, creativity and customer focus, taking advantage of the lastest technologies to offer excelent services.</p>
+              <p class="font-t">Successful strategies rewuire data analysis, creativity and customer focus, taking advantage of the lastest technologies to offer excelent services.</p>
               </div>
               <div class="buttons">
                   <button class="button-background btn-sx">GET IN TOUCH</button>
@@ -92,9 +92,10 @@ name: 'Jumbotron',
                     font-weight: 900;
                 }
                 .text {
-                    margin: 15px 0;
+                    margin: 45px 0;
                     padding: 0 250px;
                     width: 100%;
+                    font-size: 1.2em;
                 }
                 .buttons {
                     display: flex;

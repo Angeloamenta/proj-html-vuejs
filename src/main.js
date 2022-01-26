@@ -24,7 +24,7 @@ import { faProjectDiagram } from '@fortawesome/free-solid-svg-icons'
 import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { faLocationArrow } from '@fortawesome/free-solid-svg-icons'
-// import {  } from '@fortawesome/free-solid-svg-icons'
+import { faEllipsisH } from '@fortawesome/free-solid-svg-icons'
 // import {  } from '@fortawesome/free-solid-svg-icons'
 // import {  } from '@fortawesome/free-solid-svg-icons'
 
@@ -51,7 +51,7 @@ library.add(faProjectDiagram)
 library.add(faGlobe)
 library.add(faArrowRight)
 library.add(faLocationArrow)
-// library.add()
+library.add(faEllipsisH)
 // library.add(faTwitter)
 // library.add(faLinkedinIn)
 // library.add(faFacebookSquare)

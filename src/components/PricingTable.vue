@@ -5,7 +5,7 @@
              <div class="green-text">MONTHLY PLANS</div>
             <div class="title"><h1><span class="back-green">Pricing</span> Table</h1></div>
             <div class="subtitle">
-            <div class="sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio et qui consequatur culpa. Aliquam magnam atque natus corporis, eos minima voluptas, tempore architecto deleniti animi fuga. Facere ex laudantium cupiditate.</div>
+            <div class="sub">We can help you deliver and execute your future, wherever you compete, using the latest <br> technologies, from strategy development to implementation.</div>
          </div>
          </div>
          <div class="pricing-bottom">
@@ -17,28 +17,28 @@
                  <div class="card-price text-center"><h3>{{card.price}}</h3><span class="green-text">/mo</span> </div>
                  <div class="check standard quick-flex">
                      <div>Standard Accounting</div>
-                     <div v-if="card.standard"><i class="fas fa-solid fa-check"></i></div>
-                     <div v-else><font-awesome-icon icon="times"/></div>
+                     <div class="checked" v-if="card.standard"><i class="fas fa-solid fa-check"></i></div>
+                     <div class="checked" v-else><font-awesome-icon icon="times"/></div>
                  </div>
                  <div class="check acces quick-flex">
                      <div>Platform Access</div>
-                     <div v-if="card.access"><i class="fas fa-solid fa-check"></i></div>
-                     <div v-else><font-awesome-icon icon="times"/></div>
+                     <div class="checked" v-if="card.access"><i class="fas fa-solid fa-check"></i></div>
+                     <div class="checked" v-else><font-awesome-icon icon="times"/></div>
                  </div>
                   <div class="check orientation quick-flex">
                      <div>Business Orientation</div>
-                     <div v-if="card.orientation"><i class="fas fa-solid fa-check"></i></div>
-                     <div v-else><font-awesome-icon icon="times"/></div>
+                     <div class="checked" v-if="card.orientation"><i class="fas fa-solid fa-check"></i></div>
+                     <div class="checked" v-else><font-awesome-icon icon="times"/></div>
                  </div>
                   <div class="check consulant quick-flex">
                      <div>Dedicated Consulant</div>
-                     <div v-if="card.consulant"><i class="fas fa-solid fa-check"></i></div>
-                     <div v-else><font-awesome-icon icon="times"/></div>
+                     <div class="checked" v-if="card.consulant"><i class="fas fa-solid fa-check"></i></div>
+                     <div class="checked" v-else><font-awesome-icon icon="times"/></div>
                  </div>
                  <div class="check assistance quick-flex">
                      <div>Personal Assistance</div>
-                     <div v-if="card.assistance"><i class="fas fa-solid fa-check"></i></div>
-                     <div v-else><font-awesome-icon icon="times"/></div>
+                     <div class="checked" v-if="card.assistance"><i class="fas fa-solid fa-check"></i></div>
+                     <div class="checked" v-else><font-awesome-icon icon="times"/></div>
                  </div>
              </div>
          </div>
@@ -115,11 +115,12 @@ data() {
                 h1 {
                     font-size: 2.9em;
                     font-weight: 900;
+                    color: $Ebonyclay;
                 }
             }
             .subtitle {
                 .sub {
-                    color: $Scarpaflow;
+                    color: $Edward;
                 }
             }
         }
@@ -157,11 +158,15 @@ data() {
                     position: absolute;
                     left: 0;
                     top: 15px;
-                    width: 80px;
+                    width: 70px;
                     height: 40px;
-                    padding: 0 5px;
-                    border-radius: 0px 119px 119px 0px / 12px 75px 75px 55px;
+                    padding: 10px;
+                    border-radius: 0px 75px 75px 5px / 0px 75px 75px 0px;
                     background-color: $Bluelagoon;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: .7em;
                 }
 
                 .card-icon {
@@ -176,8 +181,9 @@ data() {
                     h3 {
                         color: $Bluelagoon;
                         font-size: 2.5em;
-                        font-weight: 900;
+                        
                         display: inline-block;
+                        
 
                     }
 
@@ -185,11 +191,16 @@ data() {
                 }
 
                 .card-title {
-                    color: $Shark;
+                    color: $Ebonyclay;;
                 }
                 .check {
                     margin-top: 20px;
-                    color: $Scarpaflow;
+                    color: $Edward;
+                    font-size: .9em;
+
+                    .checked {
+                        color: $Bluelagoon;
+                    }
                 }
             }
 

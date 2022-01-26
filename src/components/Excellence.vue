@@ -3,9 +3,9 @@
     <div class="container">
       <div class="ecellence-top">
     <div class="green-text">OUR BUSINES AREA</div>
-    <div class="title"><h1>Excellence in <span class="back-green-twhite">Services</span></h1></div>
+    <div class="title"><h1 class="font-bold">Excellence in <span class="back-green-twhite">Services</span></h1></div>
     <div class="subtitle">
-    <div class="sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio et qui consequatur culpa. Aliquam magnam atque natus corporis, eos minima voluptas, tempore architecto deleniti animi fuga. Facere ex laudantium cupiditate.</div>
+    <div class="sub">We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowned professionals. These are some options that you can hire.</div>
     <button class="button-noborder">SEE ALL</button>
       </div>
     </div>
@@ -91,7 +91,7 @@ data() {
       margin-top: 25px;
       align-items: center;
       .sub {
-        color: $Scarpaflow;
+        color: $White;
         font-size: 0.9em;
         width: 80%;
       }
@@ -116,7 +116,7 @@ data() {
         margin-left: 20px;
         margin-bottom: 20px;
         border-radius: 15px;
-        background-color: $Shark;
+        background-color: rgba($color: $Shark, $alpha: 0.3);
         padding: 35px;
         .card-title {
           margin: 15px 0;
@@ -126,7 +126,7 @@ data() {
         }
 
         .card-icon {
-          font-size: 1.7em;
+          font-size: 2em;
           color: $Bluelagoon;
         }
 

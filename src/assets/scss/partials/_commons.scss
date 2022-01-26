@@ -8,7 +8,8 @@
   html {
     font-size: 100%;
     // font-family: 'Lato', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
+    // font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
 
   a {
@@ -41,6 +42,21 @@
     letter-spacing: .3rem;
   }
  
+  .font-mon {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .font-bolder {
+      font-weight: 600;
+  }
+
+  .font-bold {
+      font-weight: 900;
+  }
+
+  .font-t {
+      font-weight: 300;
+  }
 
  .active {
     background-color:rgba($color: $Bluelagoon, $alpha: 1);;
@@ -79,7 +95,6 @@
     padding: 5px 20px;
     border-radius: 5px;
     color: $Bluelagoon;
-    font-weight: bold;
     border: none;
     font-size: 1em;
  }
@@ -89,7 +104,6 @@
     padding: 5px 20px;
     border-radius: 5px;
     color: $White;
-    font-weight: bold;
     border: none;
     font-size: 1em;
  }
@@ -135,4 +149,13 @@
 
  .mr {
      margin-right: 10px;
+ }
+
+ .ellipsis {
+     color: $Bluelagoon;
+     font-size: 1em;
+     display: flex;
+     flex-wrap: wrap;
+     width: 100px;
+     height: 50px;
  }
