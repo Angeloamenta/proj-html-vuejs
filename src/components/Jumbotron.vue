@@ -1,6 +1,6 @@
 <template>
-  <div id="home" class="jumbotron">
-      <div class="inner-container">
+  <div id="home" class="jumbotron" >
+      <div class="inner-container" @mouseleave="starNav()" @mouseover="stopNav()">
       <div class="container">
           <nav>
               <div class="nav-sx"><h2 class="logo-next"><span class="next">NEX</span>GEN</h2></div>
@@ -24,6 +24,14 @@
           </div>
       </div>
       </div>
+     <div class="menu-hide" v-show="show" @click="menuShow =!menuShow"><font-awesome-icon icon="bars"/></div>
+      <div v-show="menuShow" class="nav2" @mouseleave="leaveNav()">
+          <ul class="list-none font-mon font-bolder">
+                      <li :class="(nav.activated) ? 'active' : ''" @mouseover="nav.activated = true" @mouseleave="nav.activated =false" v-for="(nav, index) in arrayNav" :key="index">
+                          <a :href="nav.id">{{nav.name}}</a>
+                        </li>
+            </ul>
+      </div>
   </div>
 </template>
 
@@ -33,43 +41,28 @@ name: 'Jumbotron',
 props: {
   arrayNav: Array, 
 },
+data() {
+    return {
+        show: false,
+        menuShow:false,
+    }
+},
 // inserito tramite app
-// data() {
-//     return{
-//         navbar: [
-//             {
-//                 name: "HOME",
-//                 id: "#home",
-//                 activated: false
-//             },
-//             {
-//                 name: "ABOUT",
-//                 id: "#about",
-//                 activated: false
-//             },
-//             {
-//                 name: "SERVICES",
-//                 id: "#services",
-//                 activated: false
-//             },
-//             {
-//                 name: "PRICING",
-//                 id: "#pricing",
-//                 activated: false
-//             },
-//             {
-//                 name: "BLOG",
-//                 id: "#news",
-//                 activated: false
-//             },
-//             {
-//                 name: "GET IN TOUCH",
-//                 id: "#touch",
-//                 activated: false
-//             }
-//         ]
-//     }
-// }
+methods: {
+ starNav() {
+     console.log("ciao");
+     this.show= true
+ },
+stopNav() {
+     console.log("ciao");
+     this.show= false
+ },
+
+ leaveNav() {
+     this.menuShow = false
+ }
+
+},
 }
 </script>
 
@@ -161,6 +154,44 @@ props: {
                                 background-color: $Bluelagoon;
                             }
                         }
+                }
+            }
+        }
+    }
+    .menu-hide {
+        position: fixed;
+        top: 0vh;
+        left: 8px;
+        font-size: 2em;
+        z-index: 9999;
+        margin-top: 5px;
+        color: $Bluelagoon;
+    }
+    .nav2 {
+        height: 50%;
+        width: 10%;
+        margin: 0 auto;
+        background-color: rgba($color: $Shark, $alpha: .7);
+        position: fixed;
+        top: 0vh;
+        z-index: 99;
+        padding-top: 50px;
+        padding-bottom: 10px;
+        border-radius: 0 10px 10px 0;
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100%;
+            width: 100%;
+            li {
+                width: 100%;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                a {
+                    color: $White;
+                    
                 }
             }
         }

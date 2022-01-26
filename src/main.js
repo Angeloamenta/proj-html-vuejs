@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faUserSecret } from '@fortawesome/free-solid-svg-icons'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
 import { faGem } from '@fortawesome/free-solid-svg-icons'
 import { faRocket } from '@fortawesome/free-solid-svg-icons'
@@ -30,7 +30,7 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons'
 // import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
-// import {  } from '@fortawesome/free-solid-svg-icons'
+
 // import {  } from '@fortawesome/free-solid-svg-icons'
 // import {  } from '@fortawesome/free-solid-svg-icons'
 
@@ -62,7 +62,7 @@ library.add(faArrowUp)
 library.add(faPhone)
 library.add(faEnvelope)
 library.add(faMapMarkedAlt)
-// library.add(faFacebookF)
+library.add(faBars)
 // library.add()
 
 
