@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <Header/>
-    <Jumbotron/>
+    <Jumbotron
+    :arrayNav="navbar"
+    />
     <Main/>
     <Footer/>
   </div>
@@ -20,6 +22,42 @@ export default {
     Jumbotron,
     Main,
     Footer,
+  },
+   data() {
+    return {
+     navbar: [
+            {
+                name: "HOME",
+                id: "#home",
+                activated: false
+            },
+            {
+                name: "ABOUT",
+                id: "#about",
+                activated: false
+            },
+            {
+                name: "SERVICES",
+                id: "#services",
+                activated: false
+            },
+            {
+                name: "PRICING",
+                id: "#pricing",
+                activated: false
+            },
+            {
+                name: "BLOG",
+                id: "#news",
+                activated: false
+            },
+            {
+                name: "GET IN TOUCH",
+                id: "#touch",
+                activated: false
+            }
+        ]
+    };
   },
 };
 </script>

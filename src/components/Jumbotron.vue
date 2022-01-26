@@ -6,7 +6,7 @@
               <div class="nav-sx"><h2 class="logo-next"><span class="next">NEX</span>GEN</h2></div>
               <div class="nav-dx">
                   <ul class="list-none font-mon font-bolder">
-                      <li :class="(nav.activated) ? 'active' : ''" @mouseover="nav.activated = true" @mouseleave="nav.activated =false" v-for="(nav, index) in navbar" :key="index">
+                      <li :class="(nav.activated) ? 'active' : ''" @mouseover="nav.activated = true" @mouseleave="nav.activated =false" v-for="(nav, index) in arrayNav" :key="index">
                           <a :href="nav.id">{{nav.name}}</a>
                          </li>
                   </ul>
@@ -30,42 +30,46 @@
 <script>
 export default {
 name: 'Jumbotron',
-data() {
-    return{
-        navbar: [
-            {
-                name: "HOME",
-                id: "#home",
-                activated: false
-            },
-            {
-                name: "ABOUT",
-                id: "#about",
-                activated: false
-            },
-            {
-                name: "SERVICES",
-                id: "#services",
-                activated: false
-            },
-            {
-                name: "PRICING",
-                id: "#pricing",
-                activated: false
-            },
-            {
-                name: "BLOG",
-                id: "#news",
-                activated: false
-            },
-            {
-                name: "GET IN TOUCH",
-                id: "#touch",
-                activated: false
-            }
-        ]
-    }
-}
+props: {
+  arrayNav: Array, 
+},
+// inserito tramite app
+// data() {
+//     return{
+//         navbar: [
+//             {
+//                 name: "HOME",
+//                 id: "#home",
+//                 activated: false
+//             },
+//             {
+//                 name: "ABOUT",
+//                 id: "#about",
+//                 activated: false
+//             },
+//             {
+//                 name: "SERVICES",
+//                 id: "#services",
+//                 activated: false
+//             },
+//             {
+//                 name: "PRICING",
+//                 id: "#pricing",
+//                 activated: false
+//             },
+//             {
+//                 name: "BLOG",
+//                 id: "#news",
+//                 activated: false
+//             },
+//             {
+//                 name: "GET IN TOUCH",
+//                 id: "#touch",
+//                 activated: false
+//             }
+//         ]
+//     }
+// }
 }
 </script>
 
@@ -84,6 +88,7 @@ data() {
         background-color: rgba($color: #000000, $alpha: 0.7);
         position: relative;
         color: white;
+        min-height: 90vh;
         .container {
             display: flex;
             flex-direction: column;

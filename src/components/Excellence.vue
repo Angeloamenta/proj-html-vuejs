@@ -132,6 +132,7 @@ data() {
 
         .btn {
           margin-top: 30px;
+          width: fit-content;
           button {
             font-size: 0.9em;
             padding: 8px 20px;

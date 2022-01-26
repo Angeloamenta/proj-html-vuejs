@@ -1,7 +1,7 @@
 <template>
   <main>
       <!-- sezione the company -->
-      <section id="about" class="the-company">
+      <section class="the-company">
       <div class="the-company-top">
           <div class="container">
           <div class="cards" :class="(card.hover) ? 'select' : ''" @mouseover="card.hover =true" @mouseleave="card.hover =false" v-for="(card, index) in sezUno" :key="index">
@@ -11,7 +11,7 @@
           </div>
           </div>
       </div>
-      <div class="the-company-bottom">
+      <div id="about" class="the-company-bottom">
               <div class="company-bottom-sx">
                   <div class="the-company-intro">
                   <p class="network">ABOUT THE NETWORK</p>

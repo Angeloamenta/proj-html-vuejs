@@ -37,7 +37,8 @@
                  &copy; 2020 NEXGEN is proudly Power by <span>Codings</span>.
               </div>
           </div>
-          <div class="arrow-f"><font-awesome-icon icon="arrow-up"/></div>
+          <div class="arrow-f">
+              <a href="#home" class="shark-color"><font-awesome-icon icon="arrow-up"/></a></div>
       </div>
   </footer>
 </template>
