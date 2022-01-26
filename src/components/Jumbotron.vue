@@ -91,7 +91,7 @@ data() {
             nav {
                 display: flex;
                 align-items: center;
-                height: 40%;
+                height: 40px;
                 .nav-sx {
                     width: 20%;
                 }

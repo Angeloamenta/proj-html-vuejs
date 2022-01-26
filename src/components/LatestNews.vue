@@ -110,7 +110,7 @@ data() {
             
 
             &:hover .titolo {
-              bottom: 150px;
+              bottom: 100px;
             }
             &:hover .user-text{
               display: flex;
