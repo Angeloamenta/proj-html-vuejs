@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer id="footer">
       <div class="footer-top">
        <div class="container">
           <div class="ft-col">
@@ -7,9 +7,10 @@
                  <h2 class="logo-next"><span class="next">NEX</span>GEN</h2>
                   <div class="sub">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
                   <ul class="list-none">
-                      <li> <div class=""><i class="fas fa-solid fa-phone"></i></div> <span>+1(305) 1234-5678</span> </li>
-                      <li> <div class=""><i class="fas fa-solid fa-envelope"></i></div><span>helloexample.com</span></li>
-                      <li> <div class=""><font-awesome-icon icon="location-arrow"/></div><span>Main Avenue, 987</span></li>
+                      <li v-for="(dato, index) in dati" :key=index> 
+                          <div class=""><font-awesome-icon :icon="dato.img"/></div> <span>{{dato.info}}</span> 
+                      </li>
+                      
                   </ul>
                   <button class="button-noborder">GET IN TOUCH</button>
              </div>
@@ -65,7 +66,27 @@
 
 <script>
 export default {
-name:'Footer'
+name:'Footer',
+data() {
+    return {
+        dati: [
+            {
+                info: "+1(305) 1234-5678",
+                img:"phone",
+            },
+            {
+                info: "helloexample.com",
+                img: "envelope",
+            },
+            {
+                info: "Main Avenue, 987",
+                img: "map-marked-alt",
+            }
+        ]
+        
+
+    }
+}
 }
 </script>
 

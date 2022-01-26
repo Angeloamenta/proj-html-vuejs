@@ -1,5 +1,5 @@
 <template>
-  <section class="touch">
+  <section id="touch" class="touch">
      <div class="container">
          <div class="touch-sx">
              <div class="sx-top">
@@ -26,9 +26,10 @@
                   <div class="sub">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
                   <div class="sub">Optio et qui consequatur culpa. Aliquam magnam atque natus corporis.</div>
                   <ul class="list-none">
-                      <li> <div class="circle"><i class="fas fa-solid fa-phone"></i></div> <span>+1(305) 1234-5678</span> </li>
-                      <li> <div class="circle"><i class="fas fa-solid fa-envelope"></i></div><span>helloexample.com</span></li>
-                      <li> <div class="circle"><font-awesome-icon icon="location-arrow"/></div><span>Main Avenue, 987</span></li>
+                      <li v-for="(dato, index) in dati" :key=index> 
+                          <div class="circle"><font-awesome-icon :icon="dato.img"/></div> <span>{{dato.info}}</span> 
+                      </li>
+                      
                   </ul>
                   <button class="button-noborder">VIEW MAP</button>
              </div>
@@ -39,7 +40,27 @@
 
 <script>
 export default {
-name: 'GetTouch'
+name: 'GetTouch',
+ data() {
+    return {
+        dati: [
+            {
+                info: "+1(305) 1234-5678",
+                img:"phone",
+            },
+            {
+                info: "helloexample.com",
+                img: "envelope",
+            },
+            {
+                info: "Main Avenue, 987",
+                img: "map-marked-alt",
+            }
+        ]
+        
+
+    }
+}
 }
 </script>
 

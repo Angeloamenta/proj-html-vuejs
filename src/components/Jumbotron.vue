@@ -1,17 +1,14 @@
 <template>
-  <div class="jumbotron">
+  <div id="home" class="jumbotron">
       <div class="inner-container">
       <div class="container">
           <nav>
               <div class="nav-sx"><h2 class="logo-next"><span class="next">NEX</span>GEN</h2></div>
               <div class="nav-dx">
                   <ul class="list-none font-mon font-bolder">
-                      <li><a href="">HOME</a></li>
-                      <li><a href="">ABOUT</a></li>
-                      <li><a href="">SERVICES</a></li>
-                      <li><a href="">PRICING</a></li>
-                      <li><a href="">BLOG</a></li>
-                      <li class="active"><a href="">GET IN TOUCH</a></li>
+                      <li :class="(nav.activated) ? 'active' : ''" @mouseover="nav.activated = true" @mouseleave="nav.activated =false" v-for="(nav, index) in navbar" :key="index">
+                          <a :href="nav.id">{{nav.name}}</a>
+                         </li>
                   </ul>
               </div>
           </nav>
@@ -33,6 +30,42 @@
 <script>
 export default {
 name: 'Jumbotron',
+data() {
+    return{
+        navbar: [
+            {
+                name: "HOME",
+                id: "#home",
+                activated: false
+            },
+            {
+                name: "ABOUT",
+                id: "#about",
+                activated: false
+            },
+            {
+                name: "SERVICES",
+                id: "#services",
+                activated: false
+            },
+            {
+                name: "PRICING",
+                id: "#pricing",
+                activated: false
+            },
+            {
+                name: "BLOG",
+                id: "#news",
+                activated: false
+            },
+            {
+                name: "GET IN TOUCH",
+                id: "#touch",
+                activated: false
+            }
+        ]
+    }
+}
 }
 </script>
 

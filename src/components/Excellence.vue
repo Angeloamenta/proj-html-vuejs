@@ -1,5 +1,5 @@
 <template>
-  <section class="excellence">
+  <section id="services" class="excellence">
     <div class="container">
       <div class="ecellence-top">
     <div class="green-text">OUR BUSINES AREA</div>

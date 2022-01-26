@@ -26,6 +26,11 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { faLocationArrow } from '@fortawesome/free-solid-svg-icons'
 import { faEllipsisH } from '@fortawesome/free-solid-svg-icons'
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
+import { faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons'
+// import {  } from '@fortawesome/free-solid-svg-icons'
+// import {  } from '@fortawesome/free-solid-svg-icons'
 // import {  } from '@fortawesome/free-solid-svg-icons'
 
 
@@ -53,6 +58,13 @@ library.add(faArrowRight)
 library.add(faLocationArrow)
 library.add(faEllipsisH)
 library.add(faArrowUp)
+library.add(faPhone)
+library.add(faEnvelope)
+library.add(faMapMarkedAlt)
+// library.add()
+// library.add()
+
+
 // library.add(faLinkedinIn)
 // library.add(faFacebookSquare)
 

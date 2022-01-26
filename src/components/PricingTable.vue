@@ -1,5 +1,5 @@
 <template>
-  <section class="pricing">  
+  <section id="pricing" class="pricing">  
      <div class="container">
          <div class="pricing-top text-center">
              <div class="green-text">MONTHLY PLANS</div>
