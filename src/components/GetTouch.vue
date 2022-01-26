@@ -7,7 +7,7 @@
                     <div class="green-text">SEND A MESSAGE</div>
                     <div class="title"><h1>Get in <span class="back-green">Touch</span></h1></div>
                     <div class="subtitle">
-                    <div class="sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio et qui consequatur culpa. Aliquam magnam atque natus corporis.</div>
+                    <div class="sub">We will respond to your message as soon as possible.</div>
                     </div>
                 </div>
              </div>
@@ -65,13 +65,14 @@ name: 'GetTouch'
                         font-size: 1.6em;
                         h1 {
                             font-weight: 900;
+                            color: $Shark;
                         }
                     }
     
                     .subtitle {
     
                         .sub {
-                            color: $Scarpaflow;
+                            color: $Slategray;
                             font-size: 0.9em;
                         }
                     }
@@ -81,7 +82,7 @@ name: 'GetTouch'
             .sx-bottom {
                 display: flex;
                 flex-wrap: wrap;
-
+                margin-top: 50px;
                 .input-touch {
                     width: calc(100% / 2 - 10px);
                     height: 40px;
@@ -98,6 +99,9 @@ name: 'GetTouch'
                         background-color: transparent;
                         border-radius: 3px;
                         outline: none;
+                        padding-left: 8px;
+                        color: $Scarpaflow;
+                        font-size: .9em;
                     }
 
                     img {
@@ -109,7 +113,8 @@ name: 'GetTouch'
                         width: 15px;
                         height: 15px;
                         font-size: 15px;
-                        color: $Ebonyclay;
+                        color: $Scarpaflow;
+                        margin-right: 8px;
                     }
 
                 }
@@ -124,6 +129,9 @@ name: 'GetTouch'
                             outline: none;
                             border: none;
                             background-color: transparent;
+                            padding-left: 8px;
+                            color: $Scarpaflow;
+                            font-size: 1em;
                         }
                     }
                 
@@ -146,16 +154,16 @@ name: 'GetTouch'
 
             .dx-container {
                 width: 80%;
-
                 .sub {
                     margin-top: 15px;
-                    color: $Scarpaflow;
+                    color: $Slategray;
                 }
 
                 ul {
                     li {
                         display: flex;
                         margin-top: 20px;
+                        color: $Bluelagoon;
                         span {
                             color: $Bluelagoon;
                             margin-left: 8px;

@@ -4,9 +4,9 @@
           <div class="know-sx">
               <div class="know-text">
              <div class="green-text">NEWSLETTER</div>
-            <div class="title"><h1><span class="back-green-twhite">Know</span>First</h1></div>
+            <div class="title"><h1 class="font-bold"><span class="back-green-twhite">Know</span>First</h1></div>
             <div class="subtitle">
-            <div class="sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio et qui consequatur culpa. Aliquam magnam atque natus corporis.</div>
+            <div class="sub">Follow closely and relceive content about our company <br>and the news of the current market</div>
          </div>
          </div>
           </div>
@@ -57,7 +57,7 @@ name: 'KnowFirst'
 
                     .sub {
                         color: $White;
-                        font-size: 1.1em;
+                        font-size: .9em;
                     }
                 }
             }

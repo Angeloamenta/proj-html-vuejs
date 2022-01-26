@@ -58,6 +58,7 @@
                  &copy; 2020 NEXGEN is proudly Power by <span>Codings</span>.
               </div>
           </div>
+          <div class="arrow-f"><font-awesome-icon icon="arrow-up"/></div>
       </div>
   </footer>
 </template>
@@ -140,9 +141,10 @@ footer {
         }
     }
     .footer-bottom {
-        background-color: black;
+        background-color: rgba($color: #000000, $alpha: .95);
         width: 100%;
         height: 70px;
+        position: relative;
         color: $Edward;
         font-size: 0.8em;
         .container {
@@ -155,6 +157,21 @@ footer {
                     color: $Bluelagoon;
                 }
             }
+        }
+        .arrow-f {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: rgba($color: $Shark, $alpha: 0.3);
+            font-size: 1.5em;
+            color: $Shark;
         }
     }
     
