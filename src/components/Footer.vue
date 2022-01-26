@@ -18,12 +18,12 @@
           <div class="ft-col col-bk" v-for="(footerInfo, index) in arrayLinkFooter" :key="index">
               <h2>{{footerInfo.title}}</h2>
               <ul class="list-none">
-                  <li class="footer-list"><div><i class="fas fa-solid fa-angle-right"></i></div><div class="text-list">{{footerInfo.info1}}</div></li>
-                  <li class="footer-list"><div><i class="fas fa-solid fa-angle-right"></i></div><div class="text-list">{{footerInfo.info2}}</div></li>
-                  <li class="footer-list"><div><i class="fas fa-solid fa-angle-right"></i></div><div class="text-list">{{footerInfo.info3}}</div></li>
-                  <li class="footer-list"><div><i class="fas fa-solid fa-angle-right"></i></div><div class="text-list">{{footerInfo.info4}}</div></li>
-                  <li class="footer-list"><div><i class="fas fa-solid fa-angle-right"></i></div><div class="text-list">{{footerInfo.info5}}</div></li>
-                  <li class="footer-list"><div><i class="fas fa-solid fa-angle-right"></i></div><div class="text-list">{{footerInfo.info6}}</div></li>
+                  <li class="footer-list"><div><i class="fas fa-solid fa-angle-right"></i></div><div class="text-list"><a href="">{{footerInfo.info1}}</a></div></li>
+                  <li class="footer-list"><div><i class="fas fa-solid fa-angle-right"></i></div><div class="text-list"><a href="">{{footerInfo.info2}}</a></div></li>
+                  <li class="footer-list"><div><i class="fas fa-solid fa-angle-right"></i></div><div class="text-list"><a href="">{{footerInfo.info3}}</a></div></li>
+                  <li class="footer-list"><div><i class="fas fa-solid fa-angle-right"></i></div><div class="text-list"><a href="">{{footerInfo.info4}}</a></div></li>
+                  <li class="footer-list"><div><i class="fas fa-solid fa-angle-right"></i></div><div class="text-list"><a href="">{{footerInfo.info5}}</a></div></li>
+                  <li class="footer-list"><div><i class="fas fa-solid fa-angle-right"></i></div><div class="text-list"><a href="">{{footerInfo.info6}}</a></div></li>
               </ul>
           </div>
       </div>
@@ -122,6 +122,10 @@ footer {
 
                         .text-list {
                             margin-left: 8px;
+
+                            a {
+                                color: $Slategray;
+                            }
                         }
                     }
 

@@ -73,6 +73,7 @@ name: 'KnowFirst'
                 width: 100%;
                 .input-text {
                     padding-left: 10px;
+                    outline: none;
                 }
                 .email {
                     margin: 20px 0;

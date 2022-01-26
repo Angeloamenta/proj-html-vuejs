@@ -98,20 +98,28 @@ props: {
                 align-items: center;
                 height: 40px;
                 .nav-sx {
-                    width: 20%;
+                    width: 30%;
                 }
 
                .nav-dx {
-                   width: 80%;
+                   width: 70%;
+                   height: 100%;
             
                    ul {
                        display: flex;
                        align-items: center;
-                       justify-content: center;
+                       justify-content: space-around;
+                       height: 100%;
                      li {
-                         margin-left: 30px;
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;               
+                         height: 100%;
+                        //  width: calc(90% / 6);
+                        padding: 10px;
                          a {
                              color:white;
+                             
                          }
                         
                      }

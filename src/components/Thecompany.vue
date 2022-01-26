@@ -46,6 +46,9 @@ data() {
     return {
         
     }
+},
+methods: {
+
 }
 }
 </script>

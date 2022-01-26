@@ -6,7 +6,7 @@
         <div class="title"><h1 class="font-bold">Latest <span class="back-green">News</span></h1></div>
         <div class="subtitle quick-flex">
         <div class="sub">Every week we publish content about what is best in the busines wolrd.</div>
-        <button class="button-background">SEE ALL</button>
+        <button class="button-background ">SEE ALL</button>
         </div>
       </div>
       <div class="news-bottom">
@@ -65,6 +65,12 @@ data() {
           .sub {
             color: $Scarpaflow;
             
+          }
+        }
+
+        button {
+          &:hover {
+          background-color: rgba($color: $Bluelagoon, $alpha: 0.5);
           }
         }
       }
